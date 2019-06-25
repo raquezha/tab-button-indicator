@@ -1,0 +1,40 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    // Kotlin
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    // AppCompat
+    implementation "androidx.appcompat:appcompat:$appcompat_version"
+    // Constraint Layout
+    implementation "androidx.constraintlayout:constraintlayout:$constraint_layout_version"
+    // Core Ktx
+    implementation "androidx.core:core-ktx:$core_ktx_version"
+}
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 29
+    }
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDir 'kotlin'
+            java.excludes = [
+                    '**/build/**',
+            ]
+            res.srcDirs = ['res']
+        }
+    }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+    androidExtensions {
+        experimental = true
+    }
+}

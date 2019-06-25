@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tabItemTextColor">#00FFFFFF</color>
+
+    <color name="tabColorStartSolid">#00FFFFFF</color>
+    <color name="tabColorStartStroke">#ff4d34</color>
+
+    <color name="tabColorStartSolidSelected">#ff4d34</color>
+    <color name="tabColorStartStrokeSelected">#ff4d34</color>
+
+    <color name="tabColorMiddleSolid">#00FFFFFF</color>
+    <color name="tabColorMiddleStroke">#ff4d34</color>
+
+    <color name="tabColorMiddleSolidSelected">#ff4d34</color>
+    <color name="tabColorMiddleStrokeSelected">#ff4d34</color>
+
+    <color name="tabColorEndSolid">#00FFFFFF</color>
+    <color name="tabColorEndStroke">#ff4d34</color>
+
+
+    <color name="tabColorEndSolidSelected">#ff4d34</color>
+    <color name="tabColorEndStrokeSelected">#ff4d34</color>
+
+    <color name="tabNormalTextColorInt">#ff4d34</color>
+    <color name="tabSelectedTextColorInt">#FFFFFF</color>
+
+
+</resources>

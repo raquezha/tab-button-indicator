@@ -1,0 +1,43 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    // Kotlin
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    // AppCompat
+    implementation "androidx.appcompat:appcompat:$appcompat_version"
+    // Core Ktx
+    implementation "androidx.core:core-ktx:$core_ktx_version"
+}
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.0"
+    defaultConfig {
+        applicationId "net.raquezha.roundedtabbuttonindicator"
+        minSdkVersion 16
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDir 'kotlin'
+            java.excludes = [
+                    '**/build/**',
+            ]
+            res.srcDirs = ['res']
+        }
+    }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+    androidExtensions {
+        experimental = true
+    }
+}

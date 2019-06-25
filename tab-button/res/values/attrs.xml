@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="cornerRadiusTopLeft" format="integer"/>
+    <attr name="cornerRadiusBottomLeft" format="integer"/>
+    <attr name="cornerRadiusTopRight" format="integer"/>
+    <attr name="cornerRadiusBottomRight" format="integer"/>
+
+    <declare-styleable name="ButtonIndicator">
+        <attr name="cornerRadiusTopLeft" />
+        <attr name="cornerRadiusBottomLeft"/>
+        <attr name="cornerRadiusTopRight"/>
+        <attr name="cornerRadiusBottomRight"/>
+    </declare-styleable>
+</resources>
