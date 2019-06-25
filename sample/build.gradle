@@ -10,6 +10,10 @@ dependencies {
     implementation "androidx.appcompat:appcompat:$appcompat_version"
     // Core Ktx
     implementation "androidx.core:core-ktx:$core_ktx_version"
+    // Button Indicator
+    implementation project(path: ':button-indicator')
+    // View Pager 2
+    implementation "androidx.viewpager2:viewpager2:$view_pager2_version"
 }
 
 android {

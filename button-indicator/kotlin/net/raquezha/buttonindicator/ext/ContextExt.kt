@@ -15,5 +15,6 @@ fun Context.getDrawableById(id: Int): Drawable? {
 
 
 fun Context.getColorInt(id: Int): Int {
+
     return ContextCompat.getColor(this, id)
 }

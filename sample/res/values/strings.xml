@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Tab Button Indicator</string>
+    <string name="tab_hot">Hot</string>
+    <string name="tab_cold">Cold</string>
+    <string name="tab_warm">Warm</string>
+    <string name="tab_frozen">Frozen</string>
+</resources>

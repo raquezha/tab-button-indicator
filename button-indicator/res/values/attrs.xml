@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="cornerRadius" format="float"/>
+    <attr name="cornerRadiusTopLeft" format="float"/>
+    <attr name="cornerRadiusBottomLeft" format="float"/>
+    <attr name="cornerRadiusTopRight" format="float"/>
+    <attr name="cornerRadiusBottomRight" format="float"/>
+    <attr name="strokeWidth" format="float"/>
+    <attr name="selectedTextColor" format="color"/>
+    <attr name="normalTextColor" format="color"/>
+    <attr name="selectedBackground" format="color"/>
+    <attr name="strokeColor" format="color"/>
+
+
+    <declare-styleable name="ButtonIndicator">
+        <attr name="android:textAppearance"/>
+        <attr name="android:textSize" />
+        <attr name="cornerRadius" />
+        <attr name="cornerRadiusTopLeft" />
+        <attr name="cornerRadiusBottomLeft"/>
+        <attr name="cornerRadiusTopRight"/>
+        <attr name="cornerRadiusBottomRight"/>
+        <attr name="selectedTextColor"/>
+        <attr name="normalTextColor"/>
+        <attr name="selectedBackground"/>
+        <attr name="strokeColor"/>
+        <attr name="strokeWidth"/>
+    </declare-styleable>
+</resources>
