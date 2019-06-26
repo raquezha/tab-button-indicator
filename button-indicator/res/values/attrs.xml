@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <attr name="cornerRadius" format="float"/>
+    <attr name="tabCornerRadius" format="float"/>
     <attr name="cornerRadiusTopLeft" format="float"/>
     <attr name="cornerRadiusBottomLeft" format="float"/>
     <attr name="cornerRadiusTopRight" format="float"/>
@@ -15,7 +15,7 @@
     <declare-styleable name="ButtonIndicator">
         <attr name="android:textAppearance"/>
         <attr name="android:textSize" />
-        <attr name="cornerRadius" />
+        <attr name="tabCornerRadius" />
         <attr name="cornerRadiusTopLeft" />
         <attr name="cornerRadiusBottomLeft"/>
         <attr name="cornerRadiusTopRight"/>
