@@ -36,7 +36,7 @@ check the module sample or
         android:layout_height="32dp"
         android:layout_margin="24dp"
         app:textSize="16sp"
-        app:cornerRadius="18"
+        app:tabCornerRadius="18"
         app:strokeWidth="1"
         app:selectedTextColor="@android:color/white"
         app:strokeColor="@color/defaultColor"
@@ -48,7 +48,7 @@ check the module sample or
 
 -   android:textAppearance
 -   android:textSize
--   cornerRadius
+-   tabCornerRadius
 -   cornerRadiusTopLeft
 -   cornerRadiusBottomLeft
 -   cornerRadiusTopRight

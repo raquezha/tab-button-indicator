@@ -30,7 +30,7 @@ class ButtonIndicator(ctx: Context, attrs: AttributeSet) : ViewGroup(ctx, attrs)
     private var paint: Paint = Paint()
     private var index = 0
     private var precision = 0f
-    private var buttonCount = 0
+    private var buttonCount = 1
 
     private var selectedTextColorInt = DEFAULT_SELECTED_TEXT_COLOR
     private var normalTextColorInt = DEFAULT_TEXT_COLOR
@@ -70,7 +70,7 @@ class ButtonIndicator(ctx: Context, attrs: AttributeSet) : ViewGroup(ctx, attrs)
         Log.e("ButtonIndicator", "attribute count: $count")
         for (i in 0 until count) {
             when (val attr = attributes.getIndex(i)) {
-                R.styleable.ButtonIndicator_cornerRadius-> {
+                R.styleable.ButtonIndicator_tabCornerRadius-> {
                     Log.e("ButtonIndicator", "getting corner radius")
                     cornerRadius = attributes.getFloat(attr, DEFAULT_CORNER_RADIUS)
                 }
