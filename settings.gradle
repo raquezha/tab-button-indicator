@@ -1,1 +1,1 @@
-include ':sample', ':button-indicator'
+include ':button-indicator'
