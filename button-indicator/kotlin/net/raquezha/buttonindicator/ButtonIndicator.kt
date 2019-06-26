@@ -70,7 +70,7 @@ class ButtonIndicator(ctx: Context, attrs: AttributeSet) : ViewGroup(ctx, attrs)
         Log.e("ButtonIndicator", "attribute count: $count")
         for (i in 0 until count) {
             when (val attr = attributes.getIndex(i)) {
-                R.styleable.ButtonIndicator_cornerRadius-> {
+                R.styleable.ButtonIndicator_tabCornerRadius-> {
                     Log.e("ButtonIndicator", "getting corner radius")
                     cornerRadius = attributes.getFloat(attr, DEFAULT_CORNER_RADIUS)
                 }
