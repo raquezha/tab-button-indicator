@@ -1,4 +1,5 @@
 # Tab Button Indicator
+[![](https://jitpack.io/v/raquezha/tab-button-indicator.svg)](https://jitpack.io/#raquezha/tab-button-indicator)
 
 A simple indicator that you can use in ViewPager
 
