@@ -37,9 +37,9 @@ check the module sample or
         android:layout_margin="24dp"
         app:textSize="16sp"
         app:tabCornerRadius="18"
-        app:strokeWidth="1"
+        app:tabStrokeWidth="1"
         app:selectedTextColor="@android:color/white"
-        app:strokeColor="@color/defaultColor"
+        app:tabStrokeColor="@color/defaultColor"
         app:normalTextColor="@color/defaultColor"
         app:selectedBackground="@color/defaultColor"/>
 ```
@@ -56,8 +56,8 @@ check the module sample or
 -   selectedTextColor
 -   normalTextColor
 -   selectedBackground
--   strokeColor
--   strokeWidth
+-   tabStrokeColor
+-   tabStrokeWidth
 
 #### Note: 
 if you use *cornerRadius* it will override *cornerRadiusTopLeft*, *cornerRadiusBottomLeft* etc.

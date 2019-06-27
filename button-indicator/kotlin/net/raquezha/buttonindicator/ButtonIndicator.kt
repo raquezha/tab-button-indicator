@@ -95,10 +95,10 @@ class ButtonIndicator(ctx: Context, attrs: AttributeSet) : ViewGroup(ctx, attrs)
                 R.styleable.ButtonIndicator_selectedBackground-> {
                     selectedBackgroundInt = attributes.getColor(attr, DEFAULT_SELECTED_BACKGROUND_COLOR)
                 }
-                R.styleable.ButtonIndicator_strokeColor-> {
+                R.styleable.ButtonIndicator_tabStrokeColor-> {
                     strokeColorInt = attributes.getColor(attr, DEFAULT_STROKE_COLOR)
                 }
-                R.styleable.ButtonIndicator_strokeWidth-> {
+                R.styleable.ButtonIndicator_tabStrokeWidth-> {
                     strokeWidth = attributes.getFloat(attr, DEFAULT_STROKE_WIDTH)
                 }
                 R.styleable.ButtonIndicator_android_textAppearance -> {
