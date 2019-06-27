@@ -129,6 +129,10 @@ class ButtonIndicator(ctx: Context, attrs: AttributeSet) : ViewGroup(ctx, attrs)
 
         initEssentials()
         initializeTransactionButton()
+        if(buttonCount> 0)
+            selectView(0)
+
+
     }
 
     private fun initializeTransactionButton() {
