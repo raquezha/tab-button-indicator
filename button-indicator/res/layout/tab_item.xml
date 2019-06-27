@@ -12,7 +12,6 @@
             android:id="@+id/tvTabName"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:fontFamily="sans-serif-condensed"
             android:textStyle="bold"
             android:layout_gravity="center"
             android:lineSpacingExtra="3sp"
