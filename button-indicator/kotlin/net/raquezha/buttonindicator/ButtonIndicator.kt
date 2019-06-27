@@ -51,14 +51,14 @@ class ButtonIndicator(ctx: Context, attrs: AttributeSet) : ViewGroup(ctx, attrs)
     private var cornerRadiusTopRight = 8f
 
     companion object{
-        private val DEFAULT_COLOR = Color.GRAY
-        private val DEFAULT_CORNER_RADIUS = 0f
-        private val DEFAULT_STROKE_WIDTH = 1f
-        private val DEFAULT_SELECTED_TEXT_COLOR = Color.WHITE
-        private val DEFAULT_SELECTED_BACKGROUND_COLOR = DEFAULT_COLOR
-        private val DEFAULT_STROKE_COLOR = DEFAULT_COLOR
-        private val DEFAULT_TEXT_COLOR= DEFAULT_COLOR
-        private val DEFAULT_TEXT_SIZE = 16
+        private const val DEFAULT_COLOR = Color.GRAY
+        private const val DEFAULT_CORNER_RADIUS = 0f
+        private const val DEFAULT_STROKE_WIDTH = 1f
+        private const val DEFAULT_SELECTED_TEXT_COLOR = Color.WHITE
+        private const val DEFAULT_SELECTED_BACKGROUND_COLOR = DEFAULT_COLOR
+        private const val DEFAULT_STROKE_COLOR = DEFAULT_COLOR
+        private const val DEFAULT_TEXT_COLOR= DEFAULT_COLOR
+        private const val DEFAULT_TEXT_SIZE = 16
         private val TRANSPARENT = Color.parseColor("#00FFFFFF")
     }
 
