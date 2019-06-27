@@ -30,7 +30,7 @@ class ButtonIndicator(ctx: Context, attrs: AttributeSet) : ViewGroup(ctx, attrs)
     private var paint: Paint = Paint()
     private var index = 0
     private var precision = 0f
-    private var buttonCount = 0
+    private var buttonCount = 1
 
     private var selectedTextColorInt = DEFAULT_SELECTED_TEXT_COLOR
     private var normalTextColorInt = DEFAULT_TEXT_COLOR
