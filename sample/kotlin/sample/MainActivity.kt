@@ -39,6 +39,7 @@ class MainActivity : AppCompatActivity() {
 
         indicator.setListener(object : ButtonIndicator.TransactionIndicatorListener {
             override fun onClickButton(name: String, index: Int) {
+                //indicator.selectView(index)
                 vpSample.setCurrentItem(index, true)
             }
 

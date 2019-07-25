@@ -381,6 +381,7 @@ class ButtonIndicator(ctx: Context, attrs: AttributeSet) : ViewGroup(ctx, attrs)
     fun selectView(index: Int) {
         for (indexedValue in children.iterator().withIndex()) {
             if (index == indexedValue.index) {
+                setProgress(index, 0f)
                 selectView(indexedValue.value, getViewDrawableSelected(indexedValue.index))
             } else {
                 unSelectView(indexedValue.value, getViewDrawable(indexedValue.index))

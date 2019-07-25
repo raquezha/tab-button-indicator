@@ -15,8 +15,8 @@
             android:layout_height="32dp"
             android:layout_margin="24dp"
             app:tabCornerRadius="18"
-            app:strokeWidth="1"
-            app:strokeColor="@color/defaultColor"
+            app:tabStrokeWidth="1"
+            app:tabStrokeColor="@color/defaultColor"
             app:normalTextColor="@color/defaultColor"
             app:selectedBackground="@color/defaultColor"/>
 
