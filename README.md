@@ -22,7 +22,7 @@ Add the dependency:
 
 ```groovy
 dependencies {
-    implementation 'com.github.raquezha:tab-button-indicator:1.0'
+    implementation 'com.github.raquezha:tab-button-indicator:1.1.0'
 }
 ```
 
