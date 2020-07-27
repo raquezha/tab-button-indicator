@@ -4,6 +4,7 @@ import android.content.Context
 import android.graphics.drawable.Drawable
 import androidx.core.content.ContextCompat
 
+@Suppress("unused")
 fun Context.getString(id: Int, arg: String = ""): String {
     return this.getString(id, arg)
 }

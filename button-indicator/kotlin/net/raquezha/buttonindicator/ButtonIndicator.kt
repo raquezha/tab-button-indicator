@@ -1,25 +1,27 @@
 package net.raquezha.buttonindicator
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.graphics.Canvas
 import android.graphics.Color
 import android.graphics.Paint
-import android.graphics.drawable.*
+import android.graphics.drawable.Drawable
+import android.graphics.drawable.GradientDrawable
+import android.graphics.drawable.LayerDrawable
+import android.graphics.drawable.StateListDrawable
 import android.os.Build
 import android.util.AttributeSet
+import android.util.Log
+import android.util.StateSet
+import android.util.TypedValue
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.view.children
+import androidx.core.widget.TextViewCompat
 import kotlinx.android.synthetic.main.tab_item.view.*
 import net.raquezha.buttonindicator.ext.getColorInt
 import net.raquezha.buttonindicator.ext.getDrawableById
 import net.raquezha.roundedtabbuttonindicator.lib.R
-import android.util.StateSet
-import android.util.Log
-import android.graphics.drawable.Drawable
-import android.util.TypedValue
-import androidx.core.widget.TextViewCompat
-
 
 /**
  *  @author raquezha
@@ -129,12 +131,19 @@ class ButtonIndicator(ctx: Context, attrs: AttributeSet) : ViewGroup(ctx, attrs)
 
         initEssentials()
         initializeTransactionButton()
-        if(buttonCount> 0)
+        if (buttonCount > 0)
             selectView(0)
 
 
     }
 
+    @Suppress("unused", "CAST_NEVER_SUCCEEDS")
+    fun initializeButtons(labels: MutableList<String>) {
+
+        initializeButtons(labels.toTypedArray() as ArrayList<String>)
+    }
+
+    @SuppressLint("DefaultLocale")
     private fun initializeTransactionButton() {
 
         for ((index, viewName) in viewLabelList.withIndex()) {
@@ -366,7 +375,7 @@ class ButtonIndicator(ctx: Context, attrs: AttributeSet) : ViewGroup(ctx, attrs)
 
         gradientDrawable.setStroke(strokeWidth.toInt(), strokeColor)
 
-        gradientDrawable.gradientType = GradientDrawable.RECTANGLE
+        gradientDrawable.gradientType = GradientDrawable.LINEAR_GRADIENT
         gradientDrawable.setColor(solidColor)
         gradientDrawable.cornerRadii = cornerRadius
 
@@ -397,14 +406,17 @@ class ButtonIndicator(ctx: Context, attrs: AttributeSet) : ViewGroup(ctx, attrs)
         invalidate()
     }
 
+    @Suppress("unused")
     private fun getColor(id: Int): Int {
         return context.getColorInt(id)
     }
 
+    @Suppress("unused")
     private fun getString(id: Int): String {
         return context.getString(id)
     }
 
+    @Suppress("unused")
     private fun getDrawable(id: Int): Drawable? {
         return context.getDrawableById(id)
     }
