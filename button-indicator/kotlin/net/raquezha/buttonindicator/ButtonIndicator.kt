@@ -140,7 +140,7 @@ class ButtonIndicator(ctx: Context, attrs: AttributeSet) : ViewGroup(ctx, attrs)
     @Suppress("unused", "CAST_NEVER_SUCCEEDS")
     fun initializeButtons(labels: MutableList<String>) {
 
-        initializeButtons(labels.toTypedArray() as ArrayList<String>)
+        initializeButtons(labels.toMutableList() as ArrayList<String>)
     }
 
     @SuppressLint("DefaultLocale")

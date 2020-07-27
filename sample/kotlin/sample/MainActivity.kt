@@ -1,20 +1,20 @@
 package sample
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
 import kotlinx.android.synthetic.main.activity_sample.*
 import net.raquezha.buttonindicator.ButtonIndicator
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var labels: ArrayList<String>
+    private lateinit var labels: MutableList<String>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sample)
 
-        labels = arrayListOf(
+        labels = mutableListOf(
             getString(R.string.tab_hot),
             getString(R.string.tab_cold),
             getString(R.string.tab_warm),
